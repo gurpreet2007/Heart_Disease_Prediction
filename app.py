@@ -94,11 +94,11 @@ elif option == "Predict Diabetes":
     st.title("Diabetes Disease Prediction using Machine Learning")
 
     # Load the trained model
-    model_path = "saved_models/diabetes.joblib"  
+    path = '../saved_models/diabetes.joblib'
     try:
-        loaded_diabetes_model = joblib.load(model_path)
+        loaded_diabetes_model = joblib.load(path)
     except FileNotFoundError:
-        st.error(f"Model file not found at: {model_path}")
+        st.error(f"Model file not found at: {path}")
         st.stop()
         
     st.markdown("### Enter the patient's data below:")
