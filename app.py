@@ -5,10 +5,6 @@ import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Page Configuration
-st.set_page_config(page_title="Multiple Disease Prediction",layout="wide")
-
-
 # Sidebar Menu
 st.sidebar.title("Navigation")
 option = st.sidebar.radio("Go to",["Home","Predict Heart Disease","Predict Diabetes","About Project"])
@@ -52,12 +48,8 @@ if option == "Home":
 
     """)
 
-
-
-
 # 
 elif option == "Predict Heart Disease":
-    st.set_page_config(page_title="Heart Disease Prediction", layout="wide")
     st.title("Heart Disease Prediction using Machine Learning")
 
     # Load the trained model
@@ -99,7 +91,6 @@ elif option == "Predict Heart Disease":
 
 
 elif option == "Predict Diabetes":
-    st.set_page_config(page_title="Diabetes Disease Prediction", layout="wide")
     st.title("Diabetes Disease Prediction using Machine Learning")
 
     # Load the trained model
@@ -131,7 +122,6 @@ elif option == "Predict Diabetes":
             st.success(" No Diabetes risk detected.")
             
 elif option == "About Project":
-    st.set_page_config(page_title="Project Details", page_icon="🩺")
 
     st.title("🩺 Multiple Disease Prediction using Machine Learning")
     st.markdown("---")
