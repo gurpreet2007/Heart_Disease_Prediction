@@ -53,7 +53,7 @@ elif option == "Predict Heart Disease":
     st.title("Heart Disease Prediction using Machine Learning")
 
     # Load the trained model
-    model_path = "saved_models/heart.joblib"  
+    model_path = "./saved_models/heart.joblib"  
     try:
         loaded_heart_model = joblib.load(model_path)
     except FileNotFoundError:
@@ -94,7 +94,7 @@ elif option == "Predict Diabetes":
     st.title("Diabetes Disease Prediction using Machine Learning")
 
     # Load the trained model
-    path = '../saved_models/diabetes.joblib'
+    path = './saved_models/diabetes.joblib'
     try:
         loaded_diabetes_model = joblib.load(path)
     except FileNotFoundError:
