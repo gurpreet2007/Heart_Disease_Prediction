@@ -165,7 +165,7 @@ Electronics and Computer Engineering undergraduate with strong interest in Machi
 
 
 ## 🌐 Live Demo
-👉 [Click here to open the app]( )
+👉 [Click here to open the app](https://multiple-disease-prediction-2r7k.onrender.com)
 
 
 ##  Project Impact
